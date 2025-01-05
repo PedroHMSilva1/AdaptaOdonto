@@ -1,3 +1,6 @@
+# Projeto feito em dupla com : 
+https://github.com/Farrush
+
 ## ENV
 
 REACT_APP_API_URL=http://localhost:5040
