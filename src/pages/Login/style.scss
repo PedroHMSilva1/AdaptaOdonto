@@ -1,0 +1,51 @@
+.login-page{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    .login{
+        margin-top: 100px;
+        background-color: #F8F8F8;
+        height: 55vh;
+        border-radius: 20px;
+        box-shadow: 5px 6px 4px rgba(0,0,0,0.2);
+    }
+    
+    .labels{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    #email, #password{
+        font-size: 16px;
+        width: 50%;
+        height: 3.5vh;
+        border-radius: 6px;
+        padding: 0.52vh 1.24vh;
+        border-width: thin;
+    }
+    
+    #email{
+        margin-top: 6vh;
+    }
+    
+    //tamanho dos elementos
+    .logo-odonto, .login{
+        width: 25vw;
+    }
+    
+    .bt-entrar{
+        font-size: 16px;
+        border-radius: 25px;
+        margin-top: 0%;
+        width: 10vw;
+        padding: 2%;
+        background-color: #00BBFF;
+        color: #FFFFFF;
+        border: none;
+        box-shadow: 3px 3px 9px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+}
+

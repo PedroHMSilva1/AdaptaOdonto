@@ -1,0 +1,140 @@
+.admin-paciente {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #343a40;
+
+  .lista-paciente{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+  }
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2vh;
+  }
+
+  .search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    input[type="text"] {
+      width: 70%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .search-btn {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      padding: 10px 10px;
+      background-color: #ffffff;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+      top: 0%;
+      left: -7%;
+
+      .lupa {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+
+      }
+    }
+
+    .new-patient-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2797ca;
+      }
+    }
+  }
+
+  .patients-container {
+
+    .cards-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      font-size: medium;
+
+      .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+
+        .card-left {
+          flex: 1;
+
+          div {
+            margin-bottom: 8px;
+          }
+
+          strong {
+            color: #000000;
+          }
+        }
+
+        .card-right {
+          display: flex;
+          gap: 8px;
+
+          .edit-btn {
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #e0a800;
+            }
+          }
+
+          .delete-btn {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #c82333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

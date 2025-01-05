@@ -1,0 +1,21 @@
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    padding: 10px 20px;
+    .link{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    } 
+    a{
+        text-decoration: none;
+        color: #1a1a1a;
+    }
+    .logo{
+        height: 100%;
+    }
+}

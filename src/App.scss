@@ -1,0 +1,22 @@
+.App{
+  height: 100%;
+  width: 100%;
+
+}
+.btn-dashboard{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 8px;
+  font: 400 20px 'roboto', sans-serif;
+  color: #fff;
+  .img-retorno{
+    height: 32px;
+  }
+  &:hover{
+    scale: 1.05;
+  }
+}

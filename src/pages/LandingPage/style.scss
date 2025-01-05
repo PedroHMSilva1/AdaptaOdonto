@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.landing-page {
+
+    .topo {
+        background-image: url('../../../public/assets/images/consultorio.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /*popup */
+        .popup {
+            position: absolute;
+            top: 70px;
+            left: 64%;
+            width: 35%;
+            height: 55rem;
+            max-height: 75rem;
+            display: flex;
+            background-color: #111111cc;
+            box-shadow: #111;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .popup-content {
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+            gap: 10px;
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 30px;
+                font-size: 24px;
+                cursor: pointer;
+                color: white;
+            }
+
+            h3 {
+                text-align: center;
+                color: #ffffff;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #ffffff;
+            }
+
+            select,
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            select {
+                background-color: #fff;
+            }
+
+            textarea {
+                height: 20vh ;
+            }
+
+            p{
+                padding-top: 0px;
+            }
+
+            button.sendButton {
+                width: 100%;
+                padding: 12px;
+                background-color: #25d366;
+                color: white;
+                font-size: 18px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #128c7e;
+                }
+            }
+        }
+
+        >div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #0009;
+
+            >div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+
+                h1 {
+                    font: 400 45px 'roboto', sans-serif;
+                    text-align: center;
+                    width: 100%;
+                    color: white;
+                }
+
+                p {
+                    font: 350 25px 'roboto', sans-serif;
+                    text-align: center;
+                    color: white;
+                }
+
+                .btn-agendamento {
+                    background-color: #045863;
+                    font: 220 24px 'roboto', sans-serif;
+                    height: 40px;
+                    width: 256px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+
+                    >a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    >img {
+                        padding-right: 10px;
+                        height: 100%;
+                    }
+                }
+            }
+
+            >img {
+                width: 50%;
+            }
+        }
+    }
+
+    .servicos {
+        border-radius: 30px;
+        width: 95%;
+        height: 750px;
+        margin: 50px auto;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.200);
+        margin-bottom: 12vh;
+    }
+
+    .textos-servicos {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 125vh;
+        font-size: 20px;
+        font-family: 'Didact Gothic';
+    }
+
+    .textos-servicos,
+    h1 {
+        padding-top: 3vh;
+    }
+
+    .textos-servicos,
+    p {
+        padding-top: 7vh;
+        text-align: center;
+    }
+
+    .textos-servicos,
+    h4 {
+        font-family: 'Didact Gothic';
+    }
+
+    .pai-servico {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 150px;
+    }
+
+    .servico {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .servico img {
+        width: 30%;
+    }
+
+    .image-dente {
+        width: 250px;
+        margin: 25px;
+        float: right;
+    }
+
+    .clinica {
+        display: flex;
+        border-radius: 30px;
+        width: 95%;
+        height: 750px;
+        margin: 50px auto;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.200);
+        margin-bottom: 12vh;
+        background-color: #fff;
+
+        >div {
+            padding: 0 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-family: 'roboto', sans-serif;
+            color: #1D211F;
+            width: 50%;
+
+            h1 {
+                font-weight: 400;
+            }
+
+            p {
+                line-height: 180%;
+                text-indent: 12px;
+            }
+
+            >div {
+                padding: 18px 28px;
+                border-radius: 28px;
+                background-color: #1D211F;
+                color: #fff;
+            }
+        }
+
+        .fundo-predio {
+            background-image: url(../../../public/assets/images/fachada_predio.png);
+            background-size: cover;
+            border-radius: 30px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 30px 24px;
+
+            >div {
+                text-align: center;
+                background-color: #fff;
+                color: #1D211F;
+                padding: 32px 20px;
+                border-radius: 42px;
+                width: 262px;
+            }
+        }
+    }
+
+    .agendamento {
+        text-align: center;
+        border-radius: 30px;
+        width: 95%;
+        height: 600px;
+        margin: 50px auto;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.200);
+        margin-bottom: 12vh;
+        padding: 100px 30%;
+        font-family: 'roboto', sans-serif;
+
+        h1 {
+            color: #111;
+            font-weight: 400;
+        }
+
+        p {
+            color: #1D211F;
+            text-align: left;
+            line-height: 180%;
+        }
+    }
+
+    .tratamentos {
+        display: grid;
+        gap: 60px;
+        padding: 40px 160px;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 12vh;
+
+        >div {
+            grid-row: 1;
+
+            img {
+                width: 100%;
+                padding: 16px;
+                background-color: var(--landing-page-cyan);
+                border-radius: 32px;
+                box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.180);
+            }
+
+            p {
+                margin-top: -30px;
+                font-family: 'roboto', sans-serif;
+                color: #1D211F;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .checkup {
+        background-color: var(--landing-page-cyan);
+        border-radius: 50px;
+        width: 95%;
+        height: 800px;
+        margin: 0 auto;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.200);
+        margin-bottom: 8vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .textocheckup {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        margin: 10rem;
+        font: 24px 'Inter', sans-serif;
+        color: #1D211F;
+        font-weight: 200;
+
+        >h1 {
+            font-weight: 300;
+        }
+    }
+
+    .fundocheckup {
+        border-radius: 0px 50px 50px 0px;
+        width: 50%;
+    }
+
+    .textocheckup p {
+        font-size: 22px;
+        margin: -.5rem;
+    }
+
+    .checkup button {
+        background-color: #045863af;
+        border: transparent;
+        font: 200 24px 'roboto', sans-serif;
+        display: flex;
+        border-radius: 50px;
+        height: 50px;
+        width: 256px;
+        color: #F6EFE8;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .checkup button>img {
+        height: 40px;
+        width: 37px;
+    }
+
+    .rodape {
+        background-color: #434E49;
+        color: #F6EFE8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        font-family: "Didact Gothic", sans-serif;
+        width: 100%;
+
+        >div {
+            width: 33%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'roboto', sans-serif;
+
+            >h1 {
+                font-size: 22px;
+            }
+
+            >h2 {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .rodape img {
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+    }
+
+}
